@@ -2,7 +2,9 @@
 
 ## Nossa Promessa
 
-Como membros, colaboradores e líderes deste projeto, nos comprometemos a fazer da participação no SyncDash uma experiência livre de assédio para todos, independentemente de idade, porte físico, deficiência, etnia, identidade e expressão de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
+Como membros, colaboradores e líderes deste projeto, nos comprometemos a fazer da participação no SyncDash uma experiência livre de assédio para todos, independentemente
+de idade, porte físico, deficiência, etnia, identidade e expressão de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação
+sexual.
 
 Prometemos agir e interagir de maneiras que contribuam para uma comunidade aberta, acolhedora, inclusiva e saudável.
 
@@ -26,21 +28,28 @@ Exemplos de comportamento inaceitável incluem:
 
 ## Aplicação de Responsabilidades
 
-Os mantenedores da comunidade são responsáveis por esclarecer e fazer cumprir nossos padrões de comportamento aceitável e tomarão ações corretivas apropriadas e justas em resposta a qualquer comportamento que considerarem inadequado, ameaçador, ofensivo ou prejudicial.
+Os mantenedores da comunidade são responsáveis por esclarecer e fazer cumprir nossos padrões de comportamento aceitável e tomarão ações corretivas apropriadas e justas
+ em resposta a qualquer comportamento que considerarem inadequado, ameaçador, ofensivo ou prejudicial.
 
-Os mantenedores do projeto têm o direito e a responsabilidade de remover, editar ou rejeitar comentários, commits, códigos, edições na wiki, issues e outras contribuições que não estão alinhadas com este Código de Conduta, e comunicar as razões para suas decisões de moderação quando apropriado.
+Os mantenedores do projeto têm o direito e a responsabilidade de remover, editar ou rejeitar comentários, commits, códigos, edições na wiki, issues e outras contribuições
+ que não estão alinhadas com este Código de Conduta, e comunicar as razões para suas decisões de moderação quando apropriado.
 
 ## Escopo
 
-Este Código de Conduta se aplica a todos os espaços da comunidade, tanto dentro do projeto quanto em espaços públicos, quando uma pessoa representa o projeto ou sua comunidade. Exemplos de representação do nosso projeto incluem o uso de um e-mail oficial do projeto, postagem em redes sociais em uma conta oficial, ou agir como representante nomeado em um evento online ou offline.
+Este Código de Conduta se aplica a todos os espaços da comunidade, tanto dentro do projeto quanto em espaços públicos, quando uma pessoa representa o projeto ou sua comunidade.
+Exemplos de representação do nosso projeto incluem o uso de um e-mail oficial do projeto, postagem em redes sociais em uma conta oficial, ou agir como representante nomeado em
+ um evento online ou offline.
 
 ## Aplicação
 
-Casos de comportamento abusivo, de assédio ou inaceitável podem ser reportados aos mantenedores do projeto pelo e-mail [marcos.land@unoesc.edu.br]. Todas as reclamações serão revisadas e investigadas com seriedade e manteremos confidenciais todos os detalhes do incidente relatado.
+Casos de comportamento abusivo, de assédio ou inaceitável podem ser reportados aos mantenedores do projeto pelo e-mail [marcos.land@unoesc.edu.br]. Todas as reclamações serão
+revisadas e investigadas com seriedade e manteremos confidenciais todos os detalhes do incidente relatado.
 
-Os mantenedores do projeto que não seguirem ou aplicarem este Código de Conduta de boa fé podem enfrentar repercussões temporárias ou permanentes determinadas por outros membros da liderança do projeto.
+Os mantenedores do projeto que não seguirem ou aplicarem este Código de Conduta de boa fé podem enfrentar repercussões temporárias ou permanentes determinadas por outros
+membros da liderança do projeto.
 
 ## Atribuição
 
-Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contributor-covenant.org), versão 2.1, disponível em [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).
+Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contributor-covenant.org), versão 2.1, 
+disponível em [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).
 
