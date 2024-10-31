@@ -19,7 +19,7 @@ Com foco em flexibilidade e praticidade, o dashboard permite visualizar dados em
 - **Exportação para PDF**: [ReportLab](https://www.reportlab.com/) ou [pdfkit](https://pypi.org/project/pdfkit/) para geração de relatórios em PDF.
 
 ## Como Funciona
-1. **Inserção e Sincronização de Dados**: O usuário pode inserir dados manualmente ou permitir que a aplicação puxe dados automaticamente de APIs externas, como informações climáticas e taxas de câmbio.
+1. **Inserção e Sincronização de Dados**: O usuário pode inserir dados manualmente ou permitir que a aplicação puxe dados automaticamente de APIs externas, como informações climáticas e taxas de câmbio. A inserção de dados pode ser realizada também po r meio de arquivos em formatos como PDF e Excel.
 2. **Visualização e Personalização de Gráficos**: Escolha entre diferentes formatos de gráfico e personalize a visualização dos dados.
 3. **Exportação e Compartilhamento**: Exporte os dados em um arquivo PDF, contendo gráficos e tabelas selecionados pelo usuário.
 4. **Modo Híbrido (On-line/Off-line)**: A aplicação funciona em modo off-line com dados locais e, quando conectada à internet, sincroniza automaticamente as informações para garantir que os dados estejam atualizados.
