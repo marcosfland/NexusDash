@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Ensure the element with ID 'tema' exists
+    if (!document.getElementById('tema')) {
+        console.error('Element with ID "tema" not found.');
+        return;
+    }
     // Função para salvar as configurações
     function salvarConfiguracoes() {
         const configuracoes = {
