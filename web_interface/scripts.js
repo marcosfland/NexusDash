@@ -110,3 +110,47 @@ function downloadChart() {
 
 // Inicializar o gráfico ao carregar a página
 initializeChart();
+
+// Função de Logout
+function logoutUser() {
+    // Remover status de login do localStorage
+    localStorage.removeItem('isLoggedIn');
+    // Redirecionar para a página de login
+    window.location.href = 'login.html';
+  }
+  
+  // Checar status de login
+  function checkLoginStatus() {
+    if (!localStorage.getItem('isLoggedIn')) {
+      // Redirecionar para a página de login se o usuário não estiver logado
+      window.location.href = 'login.html';
+    }
+  }
+  
+  // Executar checagem de login quando a página carregar
+  window.onload = checkLoginStatus;
+  
+  // Função para Gerenciar o Login
+function handleLogin(event) {
+    event.preventDefault();
+  
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const rememberMe = document.getElementById('rememberMe').checked;
+  
+    // Simulação de Autenticação Simples
+    const validEmail = "user@example.com";
+    const validPassword = "password123";
+  
+    if (email === validEmail && password === validPassword) {
+      if (rememberMe) {
+        localStorage.setItem('isLoggedIn', true);
+      } else {
+        sessionStorage.setItem('isLoggedIn', true);
+      }
+      window.location.href = 'index.html'; // Redireciona para a página principal após login
+    } else {
+      document.getElementById('errorMessage').textContent = "E-mail ou senha incorretos!";
+    }
+  }
+  
