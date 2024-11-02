@@ -1,109 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuração - NexusDash</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SyncDash - Configurações</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-}
-
-main {
-    padding: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="color"],
-select {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-</style>
 <body>
+  <!-- Barra de Navegação Lateral -->
+  <div class="sidebar">
+    <h2>SyncDash</h2>
+    <nav>
+      <a href="index.html">Visão Geral</a>
+      <a href="charts.html">Gráficos</a>
+      <a href="insert-data.html">Inserir Dados</a>
+      <a href="settings.html" class="active">Configurações</a>
+      <a href="logout.php">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div class="main-content">
     <header>
-        <h1>Configuração do NexusDash</h1>
+      <h1>Configurações</h1>
+      <p>Ajuste as configurações da sua conta e preferências da aplicação.</p>
     </header>
-    <main>
-        <form id="configForm">
-            <div class="form-group">
-                <label for="siteTitle">Título do Site:</label>
-                <input type="text" id="siteTitle" name="siteTitle" required>
-            </div>
-            <div class="form-group">
-                <label for="themeColor">Cor do Tema:</label>
-                <input type="color" id="themeColor" name="themeColor" required>
-            </div>
-            <div class="form-group">
-                <label for="language">Idioma:</label>
-                <select id="language" name="language" required>
-                    <option value="pt-BR">Português (Brasil)</option>
-                    <option value="en-US">Inglês (EUA)</option>
-                    <option value="es-ES">Espanhol (Espanha)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="notifications">Notificações:</label>
-                <input type="checkbox" id="notifications" name="notifications">
-            </div>
-            <button type="submit">Salvar Configurações</button>
+
+    <!-- Seção de Configurações -->
+    <section class="settings-section">
+      <!-- Configurações de Conta -->
+      <div class="settings-card">
+        <h3>Configurações de Conta</h3>
+        <form id="accountSettingsForm">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" value="usuario@exemplo.com" required />
+
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" placeholder="********" required />
+
+          <button type="submit">Salvar Alterações</button>
         </form>
-    </main>
-    <footer>
-        <p>&copy; 2023 NexusDash. Todos os direitos reservados.</p>
-    </footer>
-    <script src="scripts.js"></script>
+      </div>
+
+      <!-- Preferências de Visualização -->
+      <div class="settings-card">
+        <h3>Preferências de Visualização</h3>
+        <label for="theme">Tema</label>
+        <select id="theme" name="theme">
+          <option value="light">Claro</option>
+          <option value="dark">Escuro</option>
+        </select>
+      </div>
+
+      <!-- Configurações de Sincronização -->
+      <div class="settings-card">
+        <h3>Configurações de Sincronização</h3>
+        <label for="autoSync">Sincronização Automática</label>
+        <input type="checkbox" id="autoSync" name="autoSync" checked />
+        <p>Ativar/desativar atualização automática de dados via API quando conectado à internet.</p>
+      </div>
+
+      <!-- Exportação e Backup -->
+      <div class="settings-card">
+        <h3>Exportação e Backup</h3>
+        <button onclick="exportData()">Exportar Dados para PDF</button>
+        <button onclick="backupData()">Realizar Backup Local</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

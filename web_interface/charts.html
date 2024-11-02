@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SyncDash - Gráficos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Biblioteca para gráficos -->
+</head>
+<body>
+  <!-- Barra de Navegação Lateral -->
+  <div class="sidebar">
+    <h2>SyncDash</h2>
+    <nav>
+      <a href="index.html">Visão Geral</a>
+      <a href="charts.html" class="active">Gráficos</a>
+      <a href="insert-data.html">Inserir Dados</a>
+      <a href="settings.html">Configurações</a>
+      <a href="logout.php">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div class="main-content">
+    <header>
+      <h1>Visualização de Gráficos</h1>
+      <p>Explore e personalize os gráficos para análise de dados.</p>
+    </header>
+
+    <!-- Seção de Configuração do Gráfico -->
+    <section class="chart-config">
+      <div class="settings-card">
+        <h3>Configuração do Gráfico</h3>
+        <label for="chartType">Tipo de Gráfico</label>
+        <select id="chartType" name="chartType">
+          <option value="line">Linha</option>
+          <option value="bar">Barra</option>
+          <option value="pie">Pizza</option>
+        </select>
+
+        <label for="timeRange">Intervalo de Tempo</label>
+        <select id="timeRange" name="timeRange">
+          <option value="7">Últimos 7 Dias</option>
+          <option value="30">Últimos 30 Dias</option>
+          <option value="365">Último Ano</option>
+        </select>
+
+        <button onclick="updateChart()">Atualizar Gráfico</button>
+      </div>
+    </section>
+
+    <!-- Seção do Gráfico -->
+    <section class="chart-display">
+      <canvas id="dataChart" width="400" height="200"></canvas>
+    </section>
+
+    <!-- Botão de Download -->
+    <div class="download-section">
+      <button onclick="downloadChart()">Baixar Gráfico</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SyncDash - Inserir Dados</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra de Navegação Lateral -->
+  <div class="sidebar">
+    <h2>SyncDash</h2>
+    <nav>
+      <a href="index.html">Visão Geral</a>
+      <a href="charts.html">Gráficos</a>
+      <a href="insert-data.html" class="active">Inserir Dados</a>
+      <a href="config.html">Configurações</a>
+      <a href="logout.php">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div class="main-content">
+    <header>
+      <h1>Inserir Dados</h1>
+      <p>Adicione ou edite os dados que deseja visualizar na dashboard.</p>
+    </header>
+
+    <!-- Formulário de Inserção de Dados -->
+    <section class="data-entry-form">
+      <div class="form-card">
+        <h3>Inserir Dados Manualmente</h3>
+        <form id="dataForm">
+          <label for="dataName">Nome do Dado</label>
+          <input type="text" id="dataName" name="dataName" placeholder="Ex: Temperatura diária" required />
+
+          <label for="dataValue">Valor do Dado</label>
+          <input type="number" id="dataValue" name="dataValue" placeholder="Ex: 25.5" required />
+
+          <label for="dataDate">Data</label>
+          <input type="date" id="dataDate" name="dataDate" required />
+
+          <button type="submit">Adicionar Dados</button>
+        </form>
+      </div>
+
+      <!-- Opção de Ativar API -->
+      <div class="form-card">
+        <h3>Conectar com API Externa</h3>
+        <p>Escolha uma fonte de dados para sincronizar automaticamente.</p>
+        <button onclick="connectAPI()">Conectar API de Clima</button>
+        <button onclick="connectAPI()">Conectar API de Câmbio</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

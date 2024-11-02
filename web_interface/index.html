@@ -1,92 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard NexusDash</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-        }
-        .sidebar {
-            height: 100vh;
-            width: 250px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #343a40;
-            padding-top: 20px;
-        }
-        .sidebar a {
-            padding: 15px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #ffffff;
-            display: block;
-        }
-        .sidebar a:hover {
-            background-color: #575d63;
-        }
-        .content {
-            margin-left: 250px;
-            padding: 20px;
-        }
-        .header {
-            background-color: #343a40;
-            color: #ffffff;
-            padding: 10px;
-            text-align: center;
-        }
-        .card {
-            margin: 20px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SyncDash</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="sidebar">
-        <a href="index.html"><i class="fas fa-home"></i> Início</a>
-        <a href="stats.html"><i class="fas fa-chart-line"></i> Estatísticas</a>
-        <a href="config.html"><i class="fas fa-cogs"></i> Configurações</a>
-        <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Sair</a>
-    </div>
-    <div class="content">
-        <div class="header">
-            <h1>Dashboard NexusDash</h1>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 1</h5>
-                            <p class="card-text">Conteúdo do card 1.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 2</h5>
-                            <p class="card-text">Conteúdo do card 2.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 3</h5>
-                            <p class="card-text">Conteúdo do card 3.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Barra de Navegação Lateral -->
+  <div class="sidebar">
+    <h2>SyncDash</h2>
+    <nav>
+      <a href="index.html" class="active">Visão Geral</a>
+      <a href="charts.html">Gráficos</a>
+      <a href="insert-data.html">Inserir Dados</a>
+      <a href="config.html">Configurações</a>
+      <a href="logout.php">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div class="main-content">
+    <header>
+      <h1>Bem-vindo, [Nome do Usuário]</h1>
+      <p>Aqui está uma visão geral dos seus dados.</p>
+    </header>
+
+    <!-- Área dos Gráficos -->
+    <section class="dashboard">
+      <div class="card">
+        <h3>Exemplo de Gráfico</h3>
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="card">
+        <h3>Dados Sincronizados</h3>
+        <p>Última sincronização: [Data e Hora]</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
