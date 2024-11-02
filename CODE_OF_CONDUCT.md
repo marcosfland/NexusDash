@@ -2,7 +2,7 @@
 
 ## Nossa Promessa
 
-Como membros, colaboradores e líderes deste projeto, nos comprometemos a fazer da participação no SyncDash uma experiência livre de assédio para todos, independentemente
+Como membros, colaboradores e líderes deste projeto, nos comprometemos a fazer da participação no NexusDash uma experiência livre de assédio para todos, independentemente
 de idade, porte físico, deficiência, etnia, identidade e expressão de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação
 sexual.
 
